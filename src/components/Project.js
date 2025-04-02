@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
+import ml from '../images/ML-Intrusion.jpg'
+import devops from '../images/CI-CD.webp'
+import phc from '../images/Artificial-Intelligence-in-Healthcare.jpg'
+import at from '../images/Attendance-Tracker.png'
 const Project = () => {
+    
   return(
     <div id="project" className="container project-section">
         <div className="row project-title  mb-4 ">
@@ -10,7 +15,7 @@ const Project = () => {
         <motion.div className="row project-body mb-4 g-4" initial={{opacity:0,y:-50}} whileInView={{opacity:1,y:0,transition:{delay:0.2,duration:0.5}}} viewport={{once:false,amount:0.25}}>
            <div className="col-sm-12 col-lg-6  ">
                <div className="card p-3">
-                  <img src="ML-Intrusion.jpg" alt="ml-intrusion" className="img-fluid card-top-img"/>
+                  <img src={ml} alt="ml-intrusion" className="img-fluid card-top-img"/>
                    <div className="card-body">  
                         <h1 className="card-title">
                         Intrusion detection in Wireless Sensor Network using machine
@@ -27,7 +32,7 @@ const Project = () => {
    
            <div className="col-sm-12 col-lg-6 ">
                 <div className="card p-3">
-                <img src="CI-CD.webp" alt="devops" className="img-fluid card-top-img"/>
+                <img src={devops} alt="devops" className="img-fluid card-top-img"/>
                    <div className="card-body">
                         <h1 className="card-title">
                         End-to-End CI/CD Pipeline with Kubernetes and Microservices
@@ -48,7 +53,7 @@ const Project = () => {
         <motion.div className="row project-body mb-4 g-4" initial={{opacity:0,y:-50}} whileInView={{opacity:1,y:0,transition:{delay:0.2,duration:0.5}}} viewport={{once:false,amount:0.25}}>
             <div className="col-sm-12 col-lg-6 ">
                <div className="card p-3">
-               <img src="Artificial-Intelligence-in-Healthcare.jpg" alt="ai-healthcare" className="img-fluid card-top-img"/>
+               <img src={phc} alt="ai-healthcare" className="img-fluid card-top-img"/>
                     <div className="card-body">
                             <h1 className="card-title">
                                  Personal Health Advisor
@@ -66,7 +71,7 @@ const Project = () => {
            </div>
            <div className="col-sm-12 col-lg-6 ">
                <div className="card p-3">
-               <img src="Attendance-Tracker.png" alt="attendance-tracker" className="img-fluid card-top-img"/>
+               <img src={at} alt="attendance-tracker" className="img-fluid card-top-img"/>
                    <div className="card-body">
                         <h1 className="card-title">
                         Student Attendance Tracker Android App

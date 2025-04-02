@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-
+import profile from '../images/sd-image.svg';
 const DisplayEffect = () =>{
    const [displayText,setDisplayText]=useState("");
    const [value,setValue]=useState(["Full Stack Developer","DevOps Engineer"]);
@@ -54,7 +54,7 @@ const Introduction = () =>{
                         </a>
                 </div>
                 <div className='col-sm-12 col-lg-6'>
-                    <img src="sd-image.svg" alt="profile-img" className="card-img-top img-fluid" />
+                    <img src={profile} alt="profile-img" className="card-img-top img-fluid" />
                 </div>
             </div>
         </div>

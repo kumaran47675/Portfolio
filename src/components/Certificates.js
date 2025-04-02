@@ -1,5 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import { motion } from 'framer-motion';
+import devtown from '../images/devtown.png';
+import nptel from '../images/nptel.png'
+import udemy from '../images/udemy.png'
+import coursera from '../images/coursera.svg'
 const Certificates = () =>{
 return(
 
@@ -16,7 +20,7 @@ return(
                         <Card.Title className='d-flex justify-content-center'><h4>Data Scientist Course</h4></Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
                            <a href="https://www.devtown.in/course/Data-Science-Industrial-Training-Program" target="_blank" rel="noopener noreferrer" className="mx-2">
-                            <img src="devtown.png" alt="devtown" className='img-fluid fixed-img' />
+                            <img src={devtown} alt="devtown" className='img-fluid fixed-img' />
                            </a>
                         </Card.Subtitle>
                         <Card.Text>
@@ -34,7 +38,7 @@ return(
                     <Card.Title className='d-flex justify-content-center'><h4>Ethical Hacking</h4></Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
                            <a href="https://onlinecourses.nptel.ac.in/noc22_cs13/preview" target="_blank" rel="noopener noreferrer" className="mx-2">
-                            <img src="nptel.png" alt="nptel" className='img-fluid fixed-img' />
+                            <img src={nptel} alt="nptel" className='img-fluid fixed-img' />
                            </a>
                            
                         </Card.Subtitle>
@@ -53,7 +57,7 @@ return(
                         <Card.Title className='d-flex justify-content-center'><h4>Devops</h4></Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
                            <a href="https://www.udemy.com/course/devopsprojects/" target="_blank" rel="noopener noreferrer" className="mx-2">
-                            <img src="udemy.png" alt="udemy" className='img-fluid fixed-img' />
+                            <img src={udemy} alt="udemy" className='img-fluid fixed-img' />
                            </a>
                           
                         </Card.Subtitle>
@@ -74,7 +78,7 @@ return(
                     <Card.Title className='d-flex justify-content-center'><h4>Meta Front-End Developer Professional Certificate</h4></Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
                            <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank" rel="noopener noreferrer" className="mx-2">
-                            <img id="coursera" src="coursera.svg" alt="nptel" className='img-fluid fixed-img' />
+                            <img id="coursera" src={coursera} alt="nptel" className='img-fluid fixed-img' />
                            </a>
                             
                         </Card.Subtitle>

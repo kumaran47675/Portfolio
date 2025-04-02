@@ -1,38 +1,298 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Playfair Display', serif;
+  color:grey;
+  background-image: url('../public/intro-bg.avif');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body h1{
+  color:goldenrod
+}
+body h2{
+  color:goldenrod
+}
+body h3{
+  color:goldenrod
+}
+body h4{
+  color:goldenrod
+}
+body h5{
+  color:goldenrod
+}
+body h6{
+  color:goldenrod
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.timeline {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: gold;
+}
+
+.timeline li {
+  margin: 20px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-content {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 2px solid gold;
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+  border: 3px solid gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  transform: scale(1.02);
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+
+  /* Certificates */
+  .certificate-section .card {
+    height: 100%; /* Ensures all cards have the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.certificate-section .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color:grey
+}
+
+.certificate-section .fixed-img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: contain; /* Prevents distortion */
+    display: block;
+    margin: 0 auto;
+}
+
+.certificate-section .card-text {
+    flex-grow: 1; /* Ensures text fills available space */
+}
+
+.certificate-section .card-body a {
+    display: flex;
+  
+    margin-top: auto; /* Pushes links to the bottom */
+}
+.certificate-section .card {
+  border: 2px solid gold; /* Default gold border */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  box-shadow: 0px 0px 5px rgba(255, 215, 0, 0.4); /* Subtle glow */
+}
+
+.certificate-section .card:hover {
+  border: 3px solid gold; /* Thicker border on hover */
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Stronger glow on hover */
+  transform: scale(1.02); /* Slight zoom effect for emphasis */
+}
+#coursera{
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+}
+
+/* Projects */
+.project-section .card {
+  height: 100%; /* Ensures uniform card height */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.project-section .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color:grey
+}
+
+.project-section .card-top-img {
+  width: 100%; /* Makes sure images take full width */
+  height: 200px; /* Set a uniform height */
+  object-fit: cover; /* Ensures images fit without distortion */
+}
+
+.project-section .card-text {
+  flex-grow: 1; /* Ensures text takes available space */
+}
+
+/* If you have links (like GitHub or live demo), this ensures uniform positioning */
+.project-section .card-body a {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: auto;
+}
+.project-section .card-title{
+  color:goldenrod
+}
+.project-section .card {
+  border: 2px solid gold; /* Default gold border */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  box-shadow: 0px 0px 5px rgba(255, 215, 0, 0.4); /* Subtle glow */
+}
+
+.project-section .card:hover {
+  border: 3px solid gold; /* Thicker border on hover */
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Stronger glow on hover */
+  transform: scale(1.02); /* Slight zoom effect for emphasis */
+}
+
+/* about-me */
+.aboutme-section .card {
+  border: 2px solid gold; /* Default gold border */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  box-shadow: 0px 0px 5px rgba(255, 215, 0, 0.4);
+  color:grey /* Subtle glow */
+}
+
+.aboutme-section .card:hover {
+  border: 3px solid gold; /* Thicker border on hover */
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Stronger glow on hover */
+  transform: scale(1.02); /* Slight zoom effect for emphasis */
+}
+
+/* contact */
+/* Default input field styling */
+/* Golden bordered form controls */
+.form-control {
+  border: 2px solid goldenrod; 
+  background-color: white;
+  color: black; /* Ensure text is visible */
+  padding: 10px; /* Better spacing */
+  border-radius: 5px; /* Softer corners */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.form-control:hover {
+  border-color: gold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Soft gold glow */
+}
+
+/* Focus effect */
+.form-control:focus {
+  border-color: gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 1); /* Brighter glow */
+  outline: none;
+}
+
+/* Golden button styling */
+.btn-primary {
+  background-color: goldenrod;
+  border: none;
   color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hover effect for button */
+.btn-primary:hover {
+  background-color: gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+  transform: scale(1.05); /* Slight pop effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sidebar styles */
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  z-index: 1000;
+  background-color: white;
+  transform: translateX(-250px);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/* Show Sidebar */
+.sidebar.show {
+  transform: translateX(0);
+}
+
+/* Close button (X) on top-right */
+.sidebar .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: black;
+}
+
+/* Social Icons (Now Aligned Vertically) */
+.sidebar .social-icons {
+  display: flex;
+  flex-direction: column; /* Ensures vertical alignment */
+  align-items: start;
+  gap: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.sidebar .social-icons i {
+  font-size: 1.5rem;
+  color: goldenrod;
+  margin-right: 8px;
+}
+
+/* Navigation Links */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Sidebar Overlay (Background Dim) */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.sidebar-overlay.show {
+  display: block;
 }

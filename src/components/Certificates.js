@@ -87,7 +87,7 @@ return(
                           I used Bootstrap for styling and GitHub for version control. 
                           I also prepared for coding interviews by solving problems and creating portfolio-ready projects.
                         </Card.Text>
-                        <Card.Link href="https://drive.google.com/file/d/18ozzyj2nmFLb_hiKHNvPj00bq-crFKN9/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="mx-2" style={{ color: 'goldenrod' }}>Certificate </Card.Link>
+                        <Card.Link href="https://drive.google.com/file/d/1M9oeblYun99SV6pZBAeoSurDNgviC7MV/view" target="_blank" rel="noopener noreferrer" className="mx-2" style={{ color: 'goldenrod' }}>Certificate </Card.Link>
                     </Card.Body>
                 </Card>
                

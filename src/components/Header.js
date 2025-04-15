@@ -49,7 +49,7 @@ const Header = () => {
         {/* Navigation Links */}
         <nav>
           <Nav.Link href="#introduction" style={{ color: 'goldenrod' }} onClick={toggleSidebar}>
-            Home
+            Introduction
           </Nav.Link>
           <Nav.Link href="#certificates" style={{ color: 'goldenrod' }} onClick={toggleSidebar}>
             Certificates

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.fde89cb4.css",
-    "main.js": "/Portfolio/static/js/main.04d4e0ad.js",
+    "main.js": "/Portfolio/static/js/main.b5e6f6dd.js",
     "static/media/Attendance-Tracker.png": "/Portfolio/static/media/Attendance-Tracker.a6856faf0b89d38eca28.png",
     "static/media/bootstrap-icons.woff?": "/Portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/Portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
@@ -14,10 +14,10 @@
     "static/media/coursera.svg": "/Portfolio/static/media/coursera.e1c5f7400d99c2e980c82c8c7e1de890.svg",
     "index.html": "/Portfolio/index.html",
     "main.fde89cb4.css.map": "/Portfolio/static/css/main.fde89cb4.css.map",
-    "main.04d4e0ad.js.map": "/Portfolio/static/js/main.04d4e0ad.js.map"
+    "main.b5e6f6dd.js.map": "/Portfolio/static/js/main.b5e6f6dd.js.map"
   },
   "entrypoints": [
     "static/css/main.fde89cb4.css",
-    "static/js/main.04d4e0ad.js"
+    "static/js/main.b5e6f6dd.js"
   ]
 }
